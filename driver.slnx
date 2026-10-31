@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="stable" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="../Fortnite-External-esp-base-main/Fortnite-External-esp-base-main/ConsoleApplication8/ConsoleApplication8.vcxproj" Id="545bb27c-5d0c-4458-9bcf-448804528a10">
+    <BuildType Project="Release" />
+  </Project>
+  <Project Path="driver.vcxproj" Id="8929b6b3-fc5e-4897-b760-31e21895716b">
+    <Deploy />
+  </Project>
+</Solution>

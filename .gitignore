@@ -1,0 +1,35 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
+
+# Compilation
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+*.obj
+*.pdb
+*.ilk
+*.ipch
+*.tlog
+*.lastbuildstate
+*.idb
+
+# Fichiers exécutables
+*.exe
+*.dll
+*.sys
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.cache
+
+# Données sensibles
+.env
+.env.*
+*.pem
+*.key

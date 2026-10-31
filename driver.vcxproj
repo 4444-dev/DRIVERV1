@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="stable|x64">
+      <Configuration>stable</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8929B6B3-FC5E-4897-B760-31E21895716B}</ProjectGuid>
+    <TemplateGuid>{1bc93793-694f-48fe-9372-81e2b05556fd}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration>Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">x64</Platform>
+    <RootNamespace>driver</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.28000.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stable|x64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+    <ALLOW_DATE_TIME>1</ALLOW_DATE_TIME>
+    <Driver_SpectreMitigation>false</Driver_SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stable|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <OutDir>$(SolutionDir)build\bin\kernel</OutDir>
+    <IntDir>$(SolutionDir)build\objects\kernel\driver</IntDir>
+    <EnableInf2cat>false</EnableInf2cat>
+    <IncludePath>C:\Program Files (x86)\Windows Kits\10\Include\10.0.28000.0\km;$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stable|x64'">
+    <DriverSign>
+      <FileDigestAlgorithm>sha256</FileDigestAlgorithm>
+    </DriverSign>
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <ClCompile>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>_AMD64_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <Profile>false</Profile>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+      <EntryPointSymbol>driver_entry</EntryPointSymbol>
+      <AdditionalOptions>/EMITPOGOPHASEINFO %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AdditionalDependencies>BufferOverflowFastFailK.lib;ntoskrnl.lib;hal.lib</AdditionalDependencies>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <FilesToPackage Include="$(TargetPath)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\core.hpp" />
+    <ClInclude Include="dependencies\encrypt\encrypt.hpp" />
+    <ClInclude Include="dependencies\physical\physical.hpp" />
+    <ClInclude Include="dependencies\process\process.hpp" />
+    <ClInclude Include="engine\engine.hpp" />
+    <ClInclude Include="engine\loadup\loadup.hpp" />
+    <ClInclude Include="engine\offsets\offsets.hpp" />
+    <ClInclude Include="engine\spoofer\spoofer.hpp" />
+    <ClInclude Include="engine\utilities\hash\hash.hpp" />
+    <ClInclude Include="engine\utilities\logger\logger.hpp" />
+    <ClInclude Include="engine\utilities\memory\memory.hpp" />
+    <ClInclude Include="engine\utilities\physical\physical.hpp" />
+    <ClInclude Include="engine\utilities\process\process.hpp" />
+    <ClInclude Include="engine\utilities\random\random.hpp" />
+    <ClInclude Include="engine\utilities\registry\registry.hpp" />
+    <ClInclude Include="engine\utilities\thread\thread.hpp" />
+    <ClInclude Include="engine\utilities\value\value.hpp" />
+    <ClInclude Include="engine\utilities\vcruntime\vcruntime.hpp" />
+    <ClInclude Include="engine\utilities\definitions\definitions.hpp" />
+    <ClInclude Include="engine\utilities\encrypt\encrypt.hpp" />
+    <ClInclude Include="engine\utilities\importer\importer.hpp" />
+    <ClInclude Include="engine\utilities\pattern\pattern.hpp" />
+    <ClInclude Include="engine\utilities\vector\vector.hpp" />
+    <ClInclude Include="engine\utilities\winapi\winapi.hpp" />
+    <ClInclude Include="globals\globals.hpp" />
+    <ClInclude Include="handler\handler.hpp" />
+    <ClInclude Include="includes\includes.hpp" />
+    <ClInclude Include="dependencies\vcruntime\vcruntime.hpp" />
+    <ClInclude Include="dependencies\definitions\definitions.hpp" />
+    <ClInclude Include="dependencies\hash\hash.hpp" />
+    <ClInclude Include="dependencies\importer\importer.hpp" />
+    <ClInclude Include="dependencies\memory\memory.hpp" />
+    <ClInclude Include="dependencies\pattern\pattern.hpp" />
+    <ClInclude Include="dependencies\pe\pe.hpp" />
+    <ClInclude Include="dependencies\winapi\winapi.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\core.cpp" />
+    <ClCompile Include="dependencies\physical\physical.cpp" />
+    <ClCompile Include="dependencies\process\process.cpp" />
+    <ClCompile Include="handler\handler.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="runtime\replacement.cpp" />
+    <ClCompile Include="runtime\runtime.cpp" />
+    <ClCompile Include="dependencies\vcruntime\vcruntime.cpp" />
+    <ClCompile Include="dependencies\memory\memory.cpp" />
+    <ClCompile Include="dependencies\pattern\pattern.cpp" />
+    <ClCompile Include="dependencies\winapi\winapi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="core\stub.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="engine\core\core.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

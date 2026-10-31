@@ -1,0 +1,396 @@
+ driver
+
+ Timestamp is 6ac800b1 (Thu Oct  8 22:44:33 2026)
+
+ Preferred load address is 0000000140000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000444cH .text$mn                CODE
+ 0002:00000000 0000000cH .data                   DATA
+ 0002:0000000c 000006c4H .pdata                  DATA
+ 0002:000006d0 00000114H .rdata                  DATA
+ 0002:000007e4 00000534H .xdata                  DATA
+ 0002:00000d18 000000f0H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_delayload_iat 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_delayload_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_image_info_bitfield 0000000000000000     <absolute>
+ 0000:00000000       __volatile_metadata        0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0001:00000000       trampoline_stub            0000000140001000 f   stub.obj
+ 0001:0000000c       ?initialize@core@@YA_NXZ   000000014000100c f   core.obj
+ 0001:0000086c       ??B?$encrypt_c@$05$0DH@$0DD@D@encrypt@@QEAAPEADXZ 000000014000186c f i core.obj
+ 0001:0000088c       ??B?$encrypt_c@$08$0DH@$0DD@D@encrypt@@QEAAPEADXZ 000000014000188c f i core.obj
+ 0001:000008ac       ??B?$encrypt_c@$0BP@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 00000001400018ac f i core.obj
+ 0001:000008cc       ??B?$encrypt_c@$0CB@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 00000001400018cc f i core.obj
+ 0001:000008ec       ??B?$encrypt_c@$0CC@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 00000001400018ec f i core.obj
+ 0001:0000090c       ??B?$encrypt_c@$0CJ@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 000000014000190c f i core.obj
+ 0001:0000092c       ??B?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 000000014000192c f i core.obj
+ 0001:0000094c       ??B?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 000000014000194c f i core.obj
+ 0001:0000096c       ??R<lambda_1>@?1??find@pattern@@YA_K_K0PEBD1@Z@QEBA_N111@Z 000000014000196c f i core.obj
+ 0001:000009e0       ?crypt@?$encrypt_c@$05$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 00000001400019e0 f i core.obj
+ 0001:00000a44       ?crypt@?$encrypt_c@$08$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 0000000140001a44 f i core.obj
+ 0001:00000aa8       ?crypt@?$encrypt_c@$0BP@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 0000000140001aa8 f i core.obj
+ 0001:00000b0c       ?crypt@?$encrypt_c@$0CB@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 0000000140001b0c f i core.obj
+ 0001:00000b70       ?crypt@?$encrypt_c@$0CC@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 0000000140001b70 f i core.obj
+ 0001:00000bd4       ?crypt@?$encrypt_c@$0CJ@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 0000000140001bd4 f i core.obj
+ 0001:00000c38       ?crypt@?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 0000000140001c38 f i core.obj
+ 0001:00000c9c       ?crypt@?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 0000000140001c9c f i core.obj
+ 0001:00000d00       ?decrypt@?$encrypt_c@$05$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140001d00 f i core.obj
+ 0001:00000d38       ?decrypt@?$encrypt_c@$08$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140001d38 f i core.obj
+ 0001:00000d70       ?decrypt@?$encrypt_c@$0BP@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140001d70 f i core.obj
+ 0001:00000da8       ?decrypt@?$encrypt_c@$0CB@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140001da8 f i core.obj
+ 0001:00000de0       ?decrypt@?$encrypt_c@$0CC@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140001de0 f i core.obj
+ 0001:00000e18       ?decrypt@?$encrypt_c@$0CJ@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140001e18 f i core.obj
+ 0001:00000e50       ?decrypt@?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140001e50 f i core.obj
+ 0001:00000e88       ?decrypt@?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140001e88 f i core.obj
+ 0001:00000ec0       ?find@pattern@@YA_K_K0PEBD1@Z 0000000140001ec0 f i core.obj
+ 0001:00000f60       ?find_export@importer@@YA_K_K@Z 0000000140001f60 f i core.obj
+ 0001:000010e0       ?get_kernel_base@importer@@YA_KXZ 00000001400020e0 f i core.obj
+ 0001:000012d8       ?get_module_base@importer@@YA?AU_module_t@1@PEBD@Z 00000001400022d8 f i core.obj
+ 0001:000014fc       ?get_section@pe@@YA?AU_section_t@1@_KPEBD0@Z 00000001400024fc f i core.obj
+ 0001:00001668       ?initialize@importer@@YA_NXZ 0000000140002668 f i core.obj
+ 0001:0000170c       ?is_encrypted@?$encrypt_c@$05$0DH@$0DD@D@encrypt@@QEAA_NXZ 000000014000270c f i core.obj
+ 0001:00001744       ?is_encrypted@?$encrypt_c@$08$0DH@$0DD@D@encrypt@@QEAA_NXZ 0000000140002744 f i core.obj
+ 0001:0000177c       ?is_encrypted@?$encrypt_c@$0BP@$0DH@$0DD@D@encrypt@@QEAA_NXZ 000000014000277c f i core.obj
+ 0001:000017b4       ?is_encrypted@?$encrypt_c@$0CB@$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400027b4 f i core.obj
+ 0001:000017ec       ?is_encrypted@?$encrypt_c@$0CC@$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400027ec f i core.obj
+ 0001:00001824       ?is_encrypted@?$encrypt_c@$0CJ@$0DH@$0DD@D@encrypt@@QEAA_NXZ 0000000140002824 f i core.obj
+ 0001:0000185c       ?is_encrypted@?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@QEAA_NXZ 000000014000285c f i core.obj
+ 0001:00001894       ?is_encrypted@?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@QEAA_NXZ 0000000140002894 f i core.obj
+ 0001:000018cc       ?rt@fnv1a@@YA_KPEBD@Z      00000001400028cc f i core.obj
+ 0001:00001974       KeGetPcr                   0000000140002974 f i core.obj
+ 0001:00001980       ?read_phys@physical@@YA_N_KPEAX0PEA_K@Z 0000000140002980 f   physical.obj
+ 0001:00001a10       ?write_phys@physical@@YA_N_KPEAX0PEA_K@Z 0000000140002a10 f   physical.obj
+ 0001:00001af8       ?virt_to_phys@physical@@YA_K_K0@Z 0000000140002af8 f   physical.obj
+ 0001:00001da4       ?get_pte_phys@physical@@YA_K_K0PEA_N@Z 0000000140002da4 f   physical.obj
+ 0001:00001fe8       ?get_base_address@process@@YA_KI@Z 0000000140002fe8 f   process.obj
+ 0001:00002074       ?get_process_dtb@process@@YA_KI@Z 0000000140003074 f   process.obj
+ 0001:000024f8       ?read@process@@YA_NI_KPEAX0@Z 00000001400034f8 f   process.obj
+ 0001:00002670       ?write@process@@YA_NI_KPEAX0@Z 0000000140003670 f   process.obj
+ 0001:000027e0       ??$read@_K@memory@@YA_K_K@Z 00000001400037e0 f i process.obj
+ 0001:000027f0       ?hk_ndis_control@impl@handler@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z 00000001400037f0 f   handler.obj
+ 0001:00002a44       ?initialize@handler@@YA_NXZ 0000000140003a44 f   handler.obj
+ 0001:00002a90       ?finish@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@J@Z 0000000140003a90 f   handler.obj
+ 0001:00002b20       ??B?$encrypt_c@$0N@$0DH@$0DF@G@encrypt@@QEAAPEAGXZ 0000000140003b20 f i handler.obj
+ 0001:00002b40       ?crypt@?$encrypt_c@$0N@$0DH@$0DF@G@encrypt@@AEAAXPEAG@Z 0000000140003b40 f i handler.obj
+ 0001:00002ba4       ?decrypt@?$encrypt_c@$0N@$0DH@$0DF@G@encrypt@@QEAAPEAGXZ 0000000140003ba4 f i handler.obj
+ 0001:00002bdc       ?is_encrypted@?$encrypt_c@$0N@$0DH@$0DF@G@encrypt@@QEAA_NXZ 0000000140003bdc f i handler.obj
+ 0001:00002c14       IoGetCurrentIrpStackLocation 0000000140003c14 f i handler.obj
+ 0001:00002c28       ?driver_entry@@YAJXZ       0000000140003c28 f   main.obj
+ 0001:00002c48       ??2@YAPEAX_K@Z             0000000140003c48 f   replacement.obj
+ 0001:00002c6c       ??3@YAXPEAX@Z              0000000140003c6c f   replacement.obj
+ 0001:00002c8c       ??3@YAXPEAX_K@Z            0000000140003c8c f   replacement.obj
+ 0001:00002cb0       ??_U@YAPEAX_K@Z            0000000140003cb0 f   replacement.obj
+ 0001:00002cd4       ??_V@YAXPEAX@Z             0000000140003cd4 f   replacement.obj
+ 0001:00002cf4       ??_V@YAXPEAX_K@Z           0000000140003cf4 f   replacement.obj
+ 0001:00002d18       isdigit                    0000000140003d18 f   replacement.obj
+ 0001:00002d34       isspace                    0000000140003d34 f   replacement.obj
+ 0001:00002d50       towupper                   0000000140003d50 f   replacement.obj
+ 0001:00002d70       towlower                   0000000140003d70 f   replacement.obj
+ 0001:00002d90       memchr                     0000000140003d90 f   replacement.obj
+ 0001:00002dc0       memcmp                     0000000140003dc0 f   replacement.obj
+ 0001:00002df4       memcpy                     0000000140003df4 f   replacement.obj
+ 0001:00002e28       memset                     0000000140003e28 f   replacement.obj
+ 0001:00002e58       strcpy                     0000000140003e58 f   replacement.obj
+ 0001:00002e80       strcmp                     0000000140003e80 f   replacement.obj
+ 0001:00002ea8       strlen                     0000000140003ea8 f   replacement.obj
+ 0001:00002ec8       strnlen                    0000000140003ec8 f   replacement.obj
+ 0001:00002ef0       memmove                    0000000140003ef0 f   replacement.obj
+ 0001:00002f24       strchr                     0000000140003f24 f   replacement.obj
+ 0001:00002f4c       strncmp                    0000000140003f4c f   replacement.obj
+ 0001:00002f80       strncpy                    0000000140003f80 f   replacement.obj
+ 0001:00002fb4       strstr                     0000000140003fb4 f   replacement.obj
+ 0001:00002fdc       stricmp                    0000000140003fdc f   replacement.obj
+ 0001:00003004       strnicmp                   0000000140004004 f   replacement.obj
+ 0001:00003038       wcschr                     0000000140004038 f   replacement.obj
+ 0001:00003060       wcscmp                     0000000140004060 f   replacement.obj
+ 0001:00003088       wcscpy                     0000000140004088 f   replacement.obj
+ 0001:000030b0       wcslen                     00000001400040b0 f   replacement.obj
+ 0001:000030d0       wcsnlen                    00000001400040d0 f   replacement.obj
+ 0001:000030f8       wcsncmp                    00000001400040f8 f   replacement.obj
+ 0001:0000312c       wcsncpy                    000000014000412c f   replacement.obj
+ 0001:00003160       wcsstr                     0000000140004160 f   replacement.obj
+ 0001:00003188       wcsicmp                    0000000140004188 f   replacement.obj
+ 0001:000031b0       wcsnicmp                   00000001400041b0 f   replacement.obj
+ 0001:000031e4       calloc                     00000001400041e4 f   replacement.obj
+ 0001:00003218       free                       0000000140004218 f   replacement.obj
+ 0001:00003238       malloc                     0000000140004238 f   replacement.obj
+ 0001:0000325c       ?tolower@@YADD@Z           000000014000425c f   replacement.obj
+ 0001:00003278       ?toupper@@YADD@Z           0000000140004278 f   replacement.obj
+ 0001:00003290       __security_check_cookie    0000000140004290 f   runtime.obj
+ 0001:0000329c       __chkstk                   000000014000429c f   runtime.obj
+ 0001:000032a8       __GSHandlerCheck           00000001400042a8 f   runtime.obj
+ 0001:000032b4       __std_terminate            00000001400042b4 f   runtime.obj
+ 0001:000032b8       ?memcpy@vcruntime@@YAPEAXPEAXPEBX_K@Z 00000001400042b8 f   vcruntime.obj
+ 0001:000032e8       ?memset@vcruntime@@YAPEAXPEAXH_K@Z 00000001400042e8 f   vcruntime.obj
+ 0001:00003314       ?memcmp@vcruntime@@YAHPEAX0_K@Z 0000000140004314 f   vcruntime.obj
+ 0001:000033e8       ?memchr@vcruntime@@YAPEAXPEAXH_K@Z 00000001400043e8 f   vcruntime.obj
+ 0001:0000346c       ?strlen@vcruntime@@YA_KQEBD@Z 000000014000446c f   vcruntime.obj
+ 0001:000034b0       ?wcslen@vcruntime@@YA_KQEBG@Z 00000001400044b0 f   vcruntime.obj
+ 0001:000034f0       ?strnlen@vcruntime@@YA_KQEBD_K@Z 00000001400044f0 f   vcruntime.obj
+ 0001:0000354c       ?wcsnlen@vcruntime@@YA_KQEBG_K@Z 000000014000454c f   vcruntime.obj
+ 0001:000035a4       ?strcpy@vcruntime@@YAPEADPEADQEBD@Z 00000001400045a4 f   vcruntime.obj
+ 0001:00003614       ?wcscpy@vcruntime@@YAPEAGPEAGQEBG@Z 0000000140004614 f   vcruntime.obj
+ 0001:00003678       ?strncpy@vcruntime@@YAPEADPEADQEBD_K@Z 0000000140004678 f   vcruntime.obj
+ 0001:000036f8       ?wcsncpy@vcruntime@@YAPEAGPEAGQEBG_K@Z 00000001400046f8 f   vcruntime.obj
+ 0001:0000376c       ?strcmp@vcruntime@@YAHQEBD0@Z 000000014000476c f   vcruntime.obj
+ 0001:00003804       ?wcscmp@vcruntime@@YAHQEBG0@Z 0000000140004804 f   vcruntime.obj
+ 0001:00003884       ?strncmp@vcruntime@@YAHPEBD0_K@Z 0000000140004884 f   vcruntime.obj
+ 0001:00003938       ?wcsncmp@vcruntime@@YAHPEBG0_K@Z 0000000140004938 f   vcruntime.obj
+ 0001:000039f0       ?tolower@vcruntime@@YADD@Z 00000001400049f0 f   vcruntime.obj
+ 0001:00003a20       ?towlower@vcruntime@@YAGG@Z 0000000140004a20 f   vcruntime.obj
+ 0001:00003a50       ?toupper@vcruntime@@YADD@Z 0000000140004a50 f   vcruntime.obj
+ 0001:00003a80       ?towupper@vcruntime@@YAGG@Z 0000000140004a80 f   vcruntime.obj
+ 0001:00003ab0       ?wcschr@vcruntime@@YAPEBGPEBGG@Z 0000000140004ab0 f   vcruntime.obj
+ 0001:00003b10       ?strchr@vcruntime@@YAPEBDPEBDH@Z 0000000140004b10 f   vcruntime.obj
+ 0001:00003b68       ?strstr@vcruntime@@YAPEBDPEBD0@Z 0000000140004b68 f   vcruntime.obj
+ 0001:00003c00       ?wcsstr@vcruntime@@YAPEBGPEBG0@Z 0000000140004c00 f   vcruntime.obj
+ 0001:00003c98       ?stricmp@vcruntime@@YAHQEBD0@Z 0000000140004c98 f   vcruntime.obj
+ 0001:00003d64       ?wcsicmp@vcruntime@@YAHQEBG0@Z 0000000140004d64 f   vcruntime.obj
+ 0001:00003e1c       ?strnicmp@vcruntime@@YAHQEBD0_K@Z 0000000140004e1c f   vcruntime.obj
+ 0001:00003efc       ?wcsnicmp@vcruntime@@YAHQEBG0_K@Z 0000000140004efc f   vcruntime.obj
+ 0001:00003fc8       ?isdigit@vcruntime@@YAHH@Z 0000000140004fc8 f   vcruntime.obj
+ 0001:00003ffc       ?isspace@vcruntime@@YAHH@Z 0000000140004ffc f   vcruntime.obj
+ 0001:00004024       ?is_valid@memory@@YA_N_K@Z 0000000140005024 f   memory.obj
+ 0001:0000407c       ?is_valid@memory@@YA_NPEBX@Z 000000014000507c f   memory.obj
+ 0001:000040d4       ?hook@memory@@YA_NPEBG_KAEAP6AJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z@Z 00000001400050d4 f   memory.obj
+ 0001:00004208       ?free_pool@winapi@@YA_N_K@Z 0000000140005208 f   winapi.obj
+ 0001:00004254       ?unicode_to_ansi_string@winapi@@YAXPEAU_STRING@@PEBU_UNICODE_STRING@@E@Z 0000000140005254 f   winapi.obj
+ 0001:000042a4       ?init_unicode_string@winapi@@YAXPEAU_UNICODE_STRING@@PEBG@Z 00000001400052a4 f   winapi.obj
+ 0001:000042e8       ?init_ansi_string@winapi@@YAXPEAU_STRING@@PEBD@Z 00000001400052e8 f   winapi.obj
+ 0001:0000432c       ?free_unicode_string@winapi@@YAXPEAU_UNICODE_STRING@@@Z 000000014000532c f   winapi.obj
+ 0001:00004368       ?free_ansi_string@winapi@@YAXPEAU_STRING@@@Z 0000000140005368 f   winapi.obj
+ 0001:000043a4       ?sleep@winapi@@YAXI@Z      00000001400053a4 f   winapi.obj
+ 0001:000043f4       ?allocate_pool@winapi@@YA_K_KW4_POOL_TYPE@@@Z 00000001400053f4 f   winapi.obj
+ 0002:00000000       trampoline_target          0000000140006000     stub.obj
+ 0002:00000008       _fltused                   0000000140006008     runtime.obj
+ 0002:00000d18       ?trampoline@globals@@3_KA  0000000140006d18     core.obj
+ 0002:00000d20       ?zw_query_system_information@importer@@3P6AJKPEAXKPEAK@ZEA 0000000140006d20     core.obj
+ 0002:00000d28       ?kernel_base@importer@@3_KA 0000000140006d28     core.obj
+ 0002:00000d30       ?kernel_size@importer@@3_KA 0000000140006d30     core.obj
+ 0002:00000d38       ?o_DbgPrintEx@@3P6AKKKPEBDZZEA 0000000140006d38     core.obj
+ 0002:00000d40       ?o_ExAllocatePoolWithTag@@3P6APEAXW4_POOL_TYPE@@_KK@ZEA 0000000140006d40     core.obj
+ 0002:00000d48       ?o_ExFreePoolWithTag@@3P6AXPEAXK@ZEA 0000000140006d48     core.obj
+ 0002:00000d50       ?o_RtlUnicodeStringToAnsiString@@3P6AJPEAU_STRING@@PEBU_UNICODE_STRING@@E@ZEA 0000000140006d50     core.obj
+ 0002:00000d58       ?o_RtlInitUnicodeString@@3P6AXPEAU_UNICODE_STRING@@PEBG@ZEA 0000000140006d58     core.obj
+ 0002:00000d60       ?o_RtlInitAnsiString@@3P6AXPEAU_STRING@@PEBD@ZEA 0000000140006d60     core.obj
+ 0002:00000d68       ?o_RtlFreeUnicodeString@@3P6AXPEAU_UNICODE_STRING@@@ZEA 0000000140006d68     core.obj
+ 0002:00000d70       ?o_RtlFreeAnsiString@@3P6AXPEAU_STRING@@@ZEA 0000000140006d70     core.obj
+ 0002:00000d78       ?o_KeDelayExecutionThread@@3P6AJDEPEAT_LARGE_INTEGER@@@ZEA 0000000140006d78     core.obj
+ 0002:00000d80       ?o_MmIsAddressValid@@3P6AEPEAX@ZEA 0000000140006d80     core.obj
+ 0002:00000d88       ?o_ObReferenceObjectByName@@3P6AJPEAU_UNICODE_STRING@@KPEAU_ACCESS_STATE@@KPEAU_OBJECT_TYPE@@DPEAXPEAPEAU_DRIVER_OBJECT@@@ZEA 0000000140006d88     core.obj
+ 0002:00000d90       ?o_MmAllocateContiguousMemory@@3P6APEAX_KT_LARGE_INTEGER@@@ZEA 0000000140006d90     core.obj
+ 0002:00000d98       ?o_IoDriverObjectType@@3PEAPEAPEAU_OBJECT_TYPE@@EA 0000000140006d98     core.obj
+ 0002:00000da0       ?o_MmCopyMemory@@3P6AJPEAXU_MM_COPY_ADDRESS@@_KKPEA_K@ZEA 0000000140006da0     core.obj
+ 0002:00000da8       ?o_MmUnmapIoSpace@@3P6AXPEAX_K@ZEA 0000000140006da8     core.obj
+ 0002:00000db0       ?o_MmMapIoSpaceEx@@3P6APEAXT_LARGE_INTEGER@@_KK@ZEA 0000000140006db0     core.obj
+ 0002:00000db8       ?o_MmGetPhysicalMemoryRanges@@3P6APEAU_PHYSICAL_MEMORY_RANGE@@XZEA 0000000140006db8     core.obj
+ 0002:00000dc0       ?o_PsGetProcessSectionBaseAddress@@3P6APEAXPEAU_KPROCESS@@@ZEA 0000000140006dc0     core.obj
+ 0002:00000dc8       ?o_IofCompleteRequest@@3P6AXPEAU_IRP@@D@ZEA 0000000140006dc8     core.obj
+ 0002:00000dd0       ?o_PsLookupProcessByProcessId@@3P6AJPEAXPEAPEAU_KPROCESS@@@ZEA 0000000140006dd0     core.obj
+ 0002:00000e00       ?o_ndis_control@impl@handler@@3P6AJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@ZEA 0000000140006e00     handler.obj
+
+ entry point at        0001:00002c28
+
+ Static symbols
+
+ 0001:00000000       $$000000                   0000000140001000     stub.obj
+ 0001:00000690       ??R<lambda_1>@?1??initialize@core@@YA_NXZ@QEBA@XZ 0000000140001690 f   core.obj
+ 0001:000006c0       ??R<lambda_2>@?6??initialize@core@@YA_NXZ@QEBA@XZ 00000001400016c0 f   core.obj
+ 0001:000006f0       ??R<lambda_3>@?1??initialize@core@@YA_NXZ@QEBA@XZ 00000001400016f0 f   core.obj
+ 0001:00000720       ??R<lambda_4>@?9??initialize@core@@YA_NXZ@QEBA@XZ 0000000140001720 f   core.obj
+ 0001:00000750       ??R<lambda_5>@?1??initialize@core@@YA_NXZ@QEBA@XZ 0000000140001750 f   core.obj
+ 0001:00000780       ??R<lambda_6>@?1??initialize@core@@YA_NXZ@QEBA@XZ 0000000140001780 f   core.obj
+ 0001:000007b0       ??R<lambda_7>@?N@??initialize@core@@YA_NXZ@QEBA@XZ 00000001400017b0 f   core.obj
+ 0001:000007e0       ??R<lambda_8>@?N@??initialize@core@@YA_NXZ@QEBA@XZ 00000001400017e0 f   core.obj
+ 0001:00000810       ??R<lambda_9>@?BA@??initialize@core@@YA_NXZ@QEBA@XZ 0000000140001810 f   core.obj
+ 0001:00000840       ??R<lambda_10>@?1??initialize@core@@YA_NXZ@QEBA@XZ 0000000140001840 f   core.obj
+ 0001:00002af4       ??R<lambda_1>@?0??initialize@handler@@YA_NXZ@QEBA@XZ 0000000140003af4 f   handler.obj
+ 0002:000006d0       ?crypted@?1???R<lambda_1>@?1??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$08$0DH@$0DD@D@encrypt@@B 00000001400066d0     core.obj
+ 0002:000006e0       ?crypted@?1???R<lambda_2>@?6??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$0CC@$0DH@$0DD@D@encrypt@@B 00000001400066e0     core.obj
+ 0002:00000704       ?crypted@?1???R<lambda_3>@?1??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$05$0DH@$0DD@D@encrypt@@B 0000000140006704     core.obj
+ 0002:00000710       ?crypted@?1???R<lambda_4>@?9??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$0CB@$0DH@$0DD@D@encrypt@@B 0000000140006710     core.obj
+ 0002:00000738       ?crypted@?1???R<lambda_5>@?1??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@B 0000000140006738     core.obj
+ 0002:00000748       ?crypted@?1???R<lambda_6>@?1??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@B 0000000140006748     core.obj
+ 0002:00000758       ?crypted@?1???R<lambda_7>@?N@??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@B 0000000140006758     core.obj
+ 0002:00000768       ?crypted@?1???R<lambda_8>@?N@??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@B 0000000140006768     core.obj
+ 0002:00000778       ?crypted@?1???R<lambda_9>@?BA@??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$0BP@$0DH@$0DD@D@encrypt@@B 0000000140006778     core.obj
+ 0002:00000798       ?crypted@?1???R<lambda_10>@?1??initialize@core@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$0CJ@$0DH@$0DD@D@encrypt@@B 0000000140006798     core.obj
+ 0002:000007c8       ?crypted@?1???R<lambda_1>@?0??initialize@handler@@YA_NXZ@QEBA@XZ@4V?$encrypt_c@$0N@$0DH@$0DF@G@encrypt@@B 00000001400067c8     handler.obj
+ 0002:000007e4       $unwind$?initialize@core@@YA_NXZ 00000001400067e4     core.obj
+ 0002:000007f0       $unwind$??R<lambda_1>@?1??initialize@core@@YA_NXZ@QEBA@XZ 00000001400067f0     core.obj
+ 0002:000007fc       $unwind$??R<lambda_2>@?6??initialize@core@@YA_NXZ@QEBA@XZ 00000001400067fc     core.obj
+ 0002:00000808       $unwind$??R<lambda_3>@?1??initialize@core@@YA_NXZ@QEBA@XZ 0000000140006808     core.obj
+ 0002:00000814       $unwind$??R<lambda_4>@?9??initialize@core@@YA_NXZ@QEBA@XZ 0000000140006814     core.obj
+ 0002:00000820       $unwind$??R<lambda_5>@?1??initialize@core@@YA_NXZ@QEBA@XZ 0000000140006820     core.obj
+ 0002:0000082c       $unwind$??R<lambda_6>@?1??initialize@core@@YA_NXZ@QEBA@XZ 000000014000682c     core.obj
+ 0002:00000838       $unwind$??R<lambda_7>@?N@??initialize@core@@YA_NXZ@QEBA@XZ 0000000140006838     core.obj
+ 0002:00000844       $unwind$??R<lambda_8>@?N@??initialize@core@@YA_NXZ@QEBA@XZ 0000000140006844     core.obj
+ 0002:00000850       $unwind$??R<lambda_9>@?BA@??initialize@core@@YA_NXZ@QEBA@XZ 0000000140006850     core.obj
+ 0002:0000085c       $unwind$??R<lambda_10>@?1??initialize@core@@YA_NXZ@QEBA@XZ 000000014000685c     core.obj
+ 0002:00000868       $unwind$?find@pattern@@YA_K_K0PEBD1@Z 0000000140006868     core.obj
+ 0002:00000874       $unwind$??B?$encrypt_c@$05$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$??B?$encrypt_c@$08$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$??B?$encrypt_c@$0BP@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$??B?$encrypt_c@$0CB@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$??B?$encrypt_c@$0CC@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$??B?$encrypt_c@$0CJ@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$??B?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$??B?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$?decrypt@?$encrypt_c@$05$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$?decrypt@?$encrypt_c@$08$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$?decrypt@?$encrypt_c@$0BP@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$?decrypt@?$encrypt_c@$0CB@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$?decrypt@?$encrypt_c@$0CC@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$?decrypt@?$encrypt_c@$0CJ@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$?decrypt@?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$?decrypt@?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@QEAAPEADXZ 0000000140006874     core.obj
+ 0002:00000874       $unwind$?rt@fnv1a@@YA_KPEBD@Z 0000000140006874     core.obj
+ 0002:00000874       $unwind$??B?$encrypt_c@$0N@$0DH@$0DF@G@encrypt@@QEAAPEAGXZ 0000000140006874     handler.obj
+ 0002:00000874       $unwind$?decrypt@?$encrypt_c@$0N@$0DH@$0DF@G@encrypt@@QEAAPEAGXZ 0000000140006874     handler.obj
+ 0002:00000880       $unwind$?get_kernel_base@importer@@YA_KXZ 0000000140006880     core.obj
+ 0002:0000088c       $unwind$?get_module_base@importer@@YA?AU_module_t@1@PEBD@Z 000000014000688c     core.obj
+ 0002:0000089c       $unwind$?find_export@importer@@YA_K_K@Z 000000014000689c     core.obj
+ 0002:000008a8       $unwind$?initialize@importer@@YA_NXZ 00000001400068a8     core.obj
+ 0002:000008b4       $unwind$?get_section@pe@@YA?AU_section_t@1@_KPEBD0@Z 00000001400068b4     core.obj
+ 0002:000008c0       $unwind$?is_encrypted@?$encrypt_c@$05$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400068c0     core.obj
+ 0002:000008c0       $unwind$?is_encrypted@?$encrypt_c@$08$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400068c0     core.obj
+ 0002:000008c0       $unwind$?is_encrypted@?$encrypt_c@$0BP@$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400068c0     core.obj
+ 0002:000008c0       $unwind$?is_encrypted@?$encrypt_c@$0CB@$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400068c0     core.obj
+ 0002:000008c0       $unwind$?is_encrypted@?$encrypt_c@$0CC@$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400068c0     core.obj
+ 0002:000008c0       $unwind$?is_encrypted@?$encrypt_c@$0CJ@$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400068c0     core.obj
+ 0002:000008c0       $unwind$?is_encrypted@?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400068c0     core.obj
+ 0002:000008c0       $unwind$?is_encrypted@?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@QEAA_NXZ 00000001400068c0     core.obj
+ 0002:000008c0       $unwind$?is_encrypted@?$encrypt_c@$0N@$0DH@$0DF@G@encrypt@@QEAA_NXZ 00000001400068c0     handler.obj
+ 0002:000008cc       $unwind$?crypt@?$encrypt_c@$05$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 00000001400068cc     core.obj
+ 0002:000008cc       $unwind$?crypt@?$encrypt_c@$08$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 00000001400068cc     core.obj
+ 0002:000008cc       $unwind$?crypt@?$encrypt_c@$0BP@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 00000001400068cc     core.obj
+ 0002:000008cc       $unwind$?crypt@?$encrypt_c@$0CB@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 00000001400068cc     core.obj
+ 0002:000008cc       $unwind$?crypt@?$encrypt_c@$0CC@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 00000001400068cc     core.obj
+ 0002:000008cc       $unwind$?crypt@?$encrypt_c@$0CJ@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 00000001400068cc     core.obj
+ 0002:000008cc       $unwind$?crypt@?$encrypt_c@$0O@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 00000001400068cc     core.obj
+ 0002:000008cc       $unwind$?crypt@?$encrypt_c@$0P@$0DH@$0DD@D@encrypt@@AEAAXPEAD@Z 00000001400068cc     core.obj
+ 0002:000008cc       $unwind$?crypt@?$encrypt_c@$0N@$0DH@$0DF@G@encrypt@@AEAAXPEAG@Z 00000001400068cc     handler.obj
+ 0002:000008d8       $unwind$?read_phys@physical@@YA_N_KPEAX0PEA_K@Z 00000001400068d8     physical.obj
+ 0002:000008e4       $unwind$?write_phys@physical@@YA_N_KPEAX0PEA_K@Z 00000001400068e4     physical.obj
+ 0002:000008f0       $unwind$?virt_to_phys@physical@@YA_K_K0@Z 00000001400068f0     physical.obj
+ 0002:000008fc       $unwind$?get_pte_phys@physical@@YA_K_K0PEA_N@Z 00000001400068fc     physical.obj
+ 0002:00000908       $unwind$?get_base_address@process@@YA_KI@Z 0000000140006908     process.obj
+ 0002:00000914       $unwind$?get_process_dtb@process@@YA_KI@Z 0000000140006914     process.obj
+ 0002:00000924       $unwind$?read@process@@YA_NI_KPEAX0@Z 0000000140006924     process.obj
+ 0002:00000930       $unwind$?write@process@@YA_NI_KPEAX0@Z 0000000140006930     process.obj
+ 0002:0000093c       $unwind$?hk_ndis_control@impl@handler@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z 000000014000693c     handler.obj
+ 0002:00000948       $unwind$?initialize@handler@@YA_NXZ 0000000140006948     handler.obj
+ 0002:00000954       $unwind$?finish@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@J@Z 0000000140006954     handler.obj
+ 0002:00000960       $unwind$??R<lambda_1>@?0??initialize@handler@@YA_NXZ@QEBA@XZ 0000000140006960     handler.obj
+ 0002:0000096c       $unwind$?driver_entry@@YAJXZ 000000014000696c     main.obj
+ 0002:00000978       $unwind$??2@YAPEAX_K@Z     0000000140006978     replacement.obj
+ 0002:00000984       $unwind$??3@YAXPEAX@Z      0000000140006984     replacement.obj
+ 0002:00000990       $unwind$??3@YAXPEAX_K@Z    0000000140006990     replacement.obj
+ 0002:0000099c       $unwind$??_U@YAPEAX_K@Z    000000014000699c     replacement.obj
+ 0002:000009a8       $unwind$??_V@YAXPEAX@Z     00000001400069a8     replacement.obj
+ 0002:000009b4       $unwind$??_V@YAXPEAX_K@Z   00000001400069b4     replacement.obj
+ 0002:000009c0       $unwind$isdigit            00000001400069c0     replacement.obj
+ 0002:000009cc       $unwind$isspace            00000001400069cc     replacement.obj
+ 0002:000009d8       $unwind$towupper           00000001400069d8     replacement.obj
+ 0002:000009e4       $unwind$towlower           00000001400069e4     replacement.obj
+ 0002:000009f0       $unwind$memchr             00000001400069f0     replacement.obj
+ 0002:000009fc       $unwind$memcmp             00000001400069fc     replacement.obj
+ 0002:00000a08       $unwind$memcpy             0000000140006a08     replacement.obj
+ 0002:00000a14       $unwind$memset             0000000140006a14     replacement.obj
+ 0002:00000a20       $unwind$strcpy             0000000140006a20     replacement.obj
+ 0002:00000a2c       $unwind$strcmp             0000000140006a2c     replacement.obj
+ 0002:00000a38       $unwind$strlen             0000000140006a38     replacement.obj
+ 0002:00000a44       $unwind$strnlen            0000000140006a44     replacement.obj
+ 0002:00000a50       $unwind$memmove            0000000140006a50     replacement.obj
+ 0002:00000a5c       $unwind$strchr             0000000140006a5c     replacement.obj
+ 0002:00000a68       $unwind$strncmp            0000000140006a68     replacement.obj
+ 0002:00000a74       $unwind$strncpy            0000000140006a74     replacement.obj
+ 0002:00000a80       $unwind$strstr             0000000140006a80     replacement.obj
+ 0002:00000a8c       $unwind$stricmp            0000000140006a8c     replacement.obj
+ 0002:00000a98       $unwind$strnicmp           0000000140006a98     replacement.obj
+ 0002:00000aa4       $unwind$wcschr             0000000140006aa4     replacement.obj
+ 0002:00000ab0       $unwind$wcscmp             0000000140006ab0     replacement.obj
+ 0002:00000abc       $unwind$wcscpy             0000000140006abc     replacement.obj
+ 0002:00000ac8       $unwind$wcslen             0000000140006ac8     replacement.obj
+ 0002:00000ad4       $unwind$wcsnlen            0000000140006ad4     replacement.obj
+ 0002:00000ae0       $unwind$wcsncmp            0000000140006ae0     replacement.obj
+ 0002:00000aec       $unwind$wcsncpy            0000000140006aec     replacement.obj
+ 0002:00000af8       $unwind$wcsstr             0000000140006af8     replacement.obj
+ 0002:00000b04       $unwind$wcsicmp            0000000140006b04     replacement.obj
+ 0002:00000b10       $unwind$wcsnicmp           0000000140006b10     replacement.obj
+ 0002:00000b1c       $unwind$calloc             0000000140006b1c     replacement.obj
+ 0002:00000b28       $unwind$free               0000000140006b28     replacement.obj
+ 0002:00000b34       $unwind$malloc             0000000140006b34     replacement.obj
+ 0002:00000b40       $unwind$?tolower@@YADD@Z   0000000140006b40     replacement.obj
+ 0002:00000b4c       $unwind$?toupper@@YADD@Z   0000000140006b4c     replacement.obj
+ 0002:00000b58       $unwind$?memcpy@vcruntime@@YAPEAXPEAXPEBX_K@Z 0000000140006b58     vcruntime.obj
+ 0002:00000b64       $unwind$?memset@vcruntime@@YAPEAXPEAXH_K@Z 0000000140006b64     vcruntime.obj
+ 0002:00000b70       $unwind$?memcmp@vcruntime@@YAHPEAX0_K@Z 0000000140006b70     vcruntime.obj
+ 0002:00000b7c       $unwind$?memchr@vcruntime@@YAPEAXPEAXH_K@Z 0000000140006b7c     vcruntime.obj
+ 0002:00000b88       $unwind$?strlen@vcruntime@@YA_KQEBD@Z 0000000140006b88     vcruntime.obj
+ 0002:00000b94       $unwind$?wcslen@vcruntime@@YA_KQEBG@Z 0000000140006b94     vcruntime.obj
+ 0002:00000ba0       $unwind$?strnlen@vcruntime@@YA_KQEBD_K@Z 0000000140006ba0     vcruntime.obj
+ 0002:00000bac       $unwind$?wcsnlen@vcruntime@@YA_KQEBG_K@Z 0000000140006bac     vcruntime.obj
+ 0002:00000bb8       $unwind$?strcpy@vcruntime@@YAPEADPEADQEBD@Z 0000000140006bb8     vcruntime.obj
+ 0002:00000bc4       $unwind$?wcscpy@vcruntime@@YAPEAGPEAGQEBG@Z 0000000140006bc4     vcruntime.obj
+ 0002:00000bd0       $unwind$?strncpy@vcruntime@@YAPEADPEADQEBD_K@Z 0000000140006bd0     vcruntime.obj
+ 0002:00000bdc       $unwind$?wcsncpy@vcruntime@@YAPEAGPEAGQEBG_K@Z 0000000140006bdc     vcruntime.obj
+ 0002:00000be8       $unwind$?strcmp@vcruntime@@YAHQEBD0@Z 0000000140006be8     vcruntime.obj
+ 0002:00000bf4       $unwind$?wcscmp@vcruntime@@YAHQEBG0@Z 0000000140006bf4     vcruntime.obj
+ 0002:00000c00       $unwind$?strncmp@vcruntime@@YAHPEBD0_K@Z 0000000140006c00     vcruntime.obj
+ 0002:00000c0c       $unwind$?wcsncmp@vcruntime@@YAHPEBG0_K@Z 0000000140006c0c     vcruntime.obj
+ 0002:00000c18       $unwind$?wcschr@vcruntime@@YAPEBGPEBGG@Z 0000000140006c18     vcruntime.obj
+ 0002:00000c24       $unwind$?strchr@vcruntime@@YAPEBDPEBDH@Z 0000000140006c24     vcruntime.obj
+ 0002:00000c30       $unwind$?strstr@vcruntime@@YAPEBDPEBD0@Z 0000000140006c30     vcruntime.obj
+ 0002:00000c3c       $unwind$?wcsstr@vcruntime@@YAPEBGPEBG0@Z 0000000140006c3c     vcruntime.obj
+ 0002:00000c48       $unwind$?stricmp@vcruntime@@YAHQEBD0@Z 0000000140006c48     vcruntime.obj
+ 0002:00000c54       $unwind$?wcsicmp@vcruntime@@YAHQEBG0@Z 0000000140006c54     vcruntime.obj
+ 0002:00000c60       $unwind$?strnicmp@vcruntime@@YAHQEBD0_K@Z 0000000140006c60     vcruntime.obj
+ 0002:00000c6c       $unwind$?wcsnicmp@vcruntime@@YAHQEBG0_K@Z 0000000140006c6c     vcruntime.obj
+ 0002:00000c78       $unwind$?isdigit@vcruntime@@YAHH@Z 0000000140006c78     vcruntime.obj
+ 0002:00000c84       $unwind$?isspace@vcruntime@@YAHH@Z 0000000140006c84     vcruntime.obj
+ 0002:00000c90       $unwind$?is_valid@memory@@YA_N_K@Z 0000000140006c90     memory.obj
+ 0002:00000c9c       $unwind$?is_valid@memory@@YA_NPEBX@Z 0000000140006c9c     memory.obj
+ 0002:00000ca8       $unwind$?hook@memory@@YA_NPEBG_KAEAP6AJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z@Z 0000000140006ca8     memory.obj
+ 0002:00000cb4       $unwind$?free_pool@winapi@@YA_N_K@Z 0000000140006cb4     winapi.obj
+ 0002:00000cc0       $unwind$?unicode_to_ansi_string@winapi@@YAXPEAU_STRING@@PEBU_UNICODE_STRING@@E@Z 0000000140006cc0     winapi.obj
+ 0002:00000ccc       $unwind$?init_unicode_string@winapi@@YAXPEAU_UNICODE_STRING@@PEBG@Z 0000000140006ccc     winapi.obj
+ 0002:00000cd8       $unwind$?init_ansi_string@winapi@@YAXPEAU_STRING@@PEBD@Z 0000000140006cd8     winapi.obj
+ 0002:00000ce4       $unwind$?free_unicode_string@winapi@@YAXPEAU_UNICODE_STRING@@@Z 0000000140006ce4     winapi.obj
+ 0002:00000cf0       $unwind$?free_ansi_string@winapi@@YAXPEAU_STRING@@@Z 0000000140006cf0     winapi.obj
+ 0002:00000cfc       $unwind$?sleep@winapi@@YAXI@Z 0000000140006cfc     winapi.obj
+ 0002:00000d08       $unwind$?allocate_pool@winapi@@YA_K_KW4_POOL_TYPE@@@Z 0000000140006d08     winapi.obj
+ 0002:00000dd8       ?MASK@?1??virt_to_phys@physical@@YA_K_K0@Z@4_KA 0000000140006dd8     physical.obj
+ 0002:00000de0       ?MASK@?1??get_pte_phys@physical@@YA_K_K0PEA_N@Z@4_KA 0000000140006de0     physical.obj
+ 0002:00000de8       ?cached_pid@?1??get_process_dtb@process@@YA_KI@Z@4IA 0000000140006de8     process.obj
+ 0002:00000df0       ?cached_dtb@?1??get_process_dtb@process@@YA_KI@Z@4_KA 0000000140006df0     process.obj
+ 0002:00000df8       ?mm_pfn_database@?O@??get_process_dtb@process@@YA_KI@Z@4_KA 0000000140006df8     process.obj

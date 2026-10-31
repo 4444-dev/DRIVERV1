@@ -1,0 +1,2679 @@
+voici pourquoi mon driver est détécté essaye de le rendre indetectable 
+
+[10/08/2026 21:55:29] [ + ] downloading Microsoft vulnerable-driver blocklist
+[10/08/2026 21:55:29] [ + ] parsed 2198 blocked-driver rules (policy 10.0.29545.0)
+[10/08/2026 21:55:33] [ + ] downloading ntoskrnl pdb!
+[10/08/2026 21:55:33] [ + ] loaded 76370 symbols
+
+[10/08/2026 21:55:33] [ + ] configurated service
+[10/08/2026 21:55:33] [ + ] started service!
+
+[10/08/2026 21:55:33] [ + ] uploaded 2198 vulnerable-driver rules and registered image callback
+[10/08/2026 21:55:33] [ + ] connected to driver!
+[10/08/2026 21:55:33] [ ! ] blocked drivers loaded: 0
+[10/08/2026 21:57:33] [ + ] searching for detections... 100.0% done!
+
+[10/08/2026 21:57:33] [ ! ] your project is detected.
+[10/08/2026 21:57:33] [ ! ] we caught 4/10 detections from your project:
+[10/08/2026 21:57:33] [ * ] 1. we detected executable memory in a data-only image section; restore the section's NX permission.
+[10/08/2026 21:57:33] [ * ] 2. we detected allocated pools; avoid allocating executable pools.
+[10/08/2026 21:57:33] [ * ] 3. we detected a loaded-module entry that does not line up with a normal driver image/object; load the driver through the normal service path.
+[10/08/2026 21:57:33] [ * ] 4. we detected a named section granting full access to everyone; use a restrictive DACL and grant only the section rights each client requires.
+
+[10/08/2026 21:57:33] [ ! ] detection dump:
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c00163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e00000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c01163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e01000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c02123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e02000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c03103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e03000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c04123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e04000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c05103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e05000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c06103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e06000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c07103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e07000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c08103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e08000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c09103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e09000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c0a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e0a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c0b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e0b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c0c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e0c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c0d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e0d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c0e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e0e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c0f163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e0f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c10123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e10000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c11163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e11000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c12163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e12000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c13163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e13000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c14103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e14000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c15103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e15000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c16163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e16000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c17103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e17000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c18103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e18000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c19163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e19000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c1a163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e1a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c1b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e1b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c1c163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e1c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c1d163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e1d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c1e163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e1e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c1f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e1f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c20123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e20000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c21163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e21000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c22163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e22000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c23163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e23000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c24163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e24000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c25163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e25000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c26163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e26000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c27103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e27000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c28103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e28000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c29103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e29000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c2a163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e2a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c2b163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e2b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c2c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e2c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c2d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e2d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c2e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e2e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c2f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e2f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c30103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e30000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c31163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e31000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c32163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e32000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c33163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e33000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c34163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e34000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c35163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e35000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c36163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e36000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c37163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e37000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c38163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e38000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c39163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e39000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c3a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e3a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c3b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e3b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c3c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e3c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c3d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e3d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c3e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e3e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c3f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e3f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c40123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e40000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c41103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e41000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c42103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e42000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c43163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e43000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c44163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e44000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c45163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e45000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c46163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e46000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c47163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e47000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c48163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e48000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c49163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e49000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c4a123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e4a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c4b123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e4b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c4c163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e4c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c4d163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e4d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c4e163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e4e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c4f163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e4f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c50163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e50000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c51163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e51000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c52163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e52000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c53163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e53000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c54163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e54000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c55163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e55000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c56103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e56000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c57103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e57000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c58163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e58000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c59163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e59000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c5a163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e5a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c5b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e5b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c5c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e5c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c5d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e5d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c5e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e5e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c5f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e5f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c60103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e60000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c61103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e61000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c62103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e62000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c63103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e63000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c64103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e64000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c65103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e65000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c66103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e66000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c67103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e67000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c68103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e68000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c69103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e69000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c6a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e6a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c6b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e6b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c6c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e6c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c6d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e6d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c6e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e6e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c6f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e6f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c70103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e70000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c71103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e71000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c72103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e72000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c73103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e73000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c74103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e74000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c75103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e75000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c76103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e76000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c77103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e77000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c78103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e78000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c79103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e79000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c7a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e7a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c7b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e7b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c7c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e7c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c7d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e7d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c7e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e7e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c7f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e7f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c80103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e80000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c81103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e81000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c82103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e82000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c83103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e83000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c84103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e84000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c85103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e85000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c86103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e86000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c87103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e87000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c88103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e88000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c89103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e89000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c8a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e8a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c8b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e8b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c8c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e8c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c8d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e8d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c8e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e8e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c8f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e8f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c90103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e90000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c91103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e91000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c92103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e92000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c93103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e93000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c94103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e94000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c95103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e95000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c96103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e96000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c97103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e97000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c98103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e98000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c99103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e99000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c9a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e9a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c9b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e9b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c9c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e9c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c9d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e9d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c9e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e9e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3c9f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219e9f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ca9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ea9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3caa103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eaa000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cab103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eab000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cac103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eac000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cad103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ead000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cae103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eae000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3caf103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eaf000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cb9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eb9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cba103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eba000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cbb103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ebb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cbc103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ebc000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cbd103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ebd000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cbe103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ebe000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cbf103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ebf000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cc9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ec9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cca103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eca000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ccb103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ecb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ccc103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ecc000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ccd103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ecd000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cce103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ece000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ccf103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ecf000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cd9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ed9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cda103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eda000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cdb163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219edb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cdc163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219edc000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cdd163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219edd000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cde163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ede000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cdf163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219edf000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce0163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce1163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce2163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce3163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce4163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce5163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce6163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce7163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce8163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ce9163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ee9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cea163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eea000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ceb163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eeb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cec163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eec000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3ced123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eed000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cee163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eee000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cef103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eef000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf3163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf4163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf5123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cf9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219ef9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!.data
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cfa123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219efa000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cfb123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219efb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cfc163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219efc000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cfd123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219efd000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cfe103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219efe000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3cff103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219eff000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3d00103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219f00000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:33] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:33] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:33] [ ! ] method: section permission mismatch leaf=0x3d01123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:33] [ ! ] address: 0xfffff80219f01000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d02123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f02000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d03103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f03000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d04103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f04000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d05103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f05000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d06103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f06000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d07103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f07000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d08103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f08000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d09103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f09000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d0a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f0a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d0b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f0b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d0c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f0c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d0d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f0d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d0e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f0e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d0f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f0f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d10103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f10000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d11103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f11000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d12103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f12000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d13103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f13000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d14103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f14000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d15103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f15000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d16103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f16000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d17103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f17000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d18103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f18000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d19103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f19000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d1a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f1a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d1b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f1b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d1c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f1c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d1d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f1d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d1e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f1e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d1f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f1f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d20103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f20000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d21103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f21000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!ALMOSTRO
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d22103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f22000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d23163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f23000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d24163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f24000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d25163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f25000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d26163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f26000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d27163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f27000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d28163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f28000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d29103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f29000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d2a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f2a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d2b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f2b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!CACHEALI
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d2c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f2c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d2d163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f2d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d2e163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f2e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d2f163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f2f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d30103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f30000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d31103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f31000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d32103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f32000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d33103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f33000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d34103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f34000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d35123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f35000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d36123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f36000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d37123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f37000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d38103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f38000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d39103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f39000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d3a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f3a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d3b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f3b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d3c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f3c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d3d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f3d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d3e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f3e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d3f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f3f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d40103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f40000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d41163 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f41000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d42123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f42000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d43123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f43000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d44123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f44000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d45103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f45000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d46123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f46000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d47123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f47000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d48123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f48000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d49123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f49000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d4a123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f4a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d4b123 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f4b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d4c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f4c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d4d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f4d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d4e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f4e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d4f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f4f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d50103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f50000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d51103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f51000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d52103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f52000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d53103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f53000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d54103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f54000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d55103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f55000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d56103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f56000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!PAGEVRFD
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d57103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f57000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d58103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f58000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d59103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f59000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d5a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f5a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d5b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f5b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d5c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f5c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d5d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f5d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d5e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f5e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d5f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f5f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d60103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f60000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d61103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f61000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d62103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f62000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d63103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f63000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d64103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f64000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d65103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f65000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d66103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f66000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d67103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f67000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d68103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f68000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d69103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f69000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d6a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f6a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d6b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f6b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d6c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f6c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d6d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f6d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d6e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f6e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d6f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f6f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d70103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f70000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d71103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f71000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d72103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f72000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!INITDATA
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d73103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f73000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d74103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f74000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d75103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f75000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d76103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f76000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d77103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f77000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d78103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f78000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d79103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f79000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d7a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f7a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d7b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f7b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d7c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f7c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d7d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f7d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d7e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f7e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d7f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f7f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d80103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f80000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d81103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f81000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d82103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f82000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d83103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f83000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d84103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f84000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d85103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f85000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d86103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f86000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d87103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f87000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d88103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f88000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d89103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f89000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d8a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f8a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d8b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f8b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d8c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f8c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d8d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f8d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d8e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f8e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d8f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f8f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d90103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f90000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d91103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f91000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d92103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f92000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d93103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f93000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d94103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f94000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d95103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f95000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d96103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f96000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d97103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f97000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d98103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f98000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d99103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f99000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d9a103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f9a000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d9b103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f9b000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d9c103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f9c000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d9d103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f9d000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d9e103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f9e000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3d9f103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219f9f000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3da9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fa9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3daa103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219faa000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dab103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fab000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dac103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fac000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dad103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fad000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dae103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fae000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3daf103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219faf000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3db9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fb9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dba103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fba000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dbb103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fbb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dbc103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fbc000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dbd103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fbd000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dbe103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fbe000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dbf103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fbf000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dc9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fc9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dca103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fca000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dcb103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fcb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dcc103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fcc000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dcd103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fcd000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dce103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fce000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dcf103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fcf000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dd9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fd9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dda103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fda000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3ddb103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fdb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3ddc103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fdc000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3ddd103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fdd000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dde103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fde000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3ddf103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fdf000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3de9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fe9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dea103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fea000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3deb103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219feb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dec103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fec000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3ded103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fed000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dee103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fee000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3def103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fef000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df0103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff0000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df1103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff1000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df2103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff2000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df3103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff3000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df4103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff4000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df5103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff5000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df6103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff6000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df7103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff7000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df8103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff8000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3df9103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ff9000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dfa103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ffa000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dfb103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ffb000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dfc103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ffc000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dfd103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ffd000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dfe103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219ffe000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: ntoskrnl.exe!Pad3
+[10/08/2026 21:57:34] [ ! ] type: executable page in non-executable image section
+[10/08/2026 21:57:34] [ ! ] method: section permission mismatch leaf=0x3dff103 page=0x1000 rw=1 nx=0 user=0
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80219fff000 size: 0x1000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: pool!large_execute
+[10/08/2026 21:57:34] [ ! ] type: executable nonpaged pool allocation
+[10/08/2026 21:57:34] [ ! ] method: base=0xffffca0a1c234000 size=0x32000 tag=SONI first_wx=0xffffca0a1c234000 exec=1 image_evidence
+[10/08/2026 21:57:34] [ ! ] address: 0xffffca0a1c234000 size: 0x32000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: pool!large_execute
+[10/08/2026 21:57:34] [ ! ] type: executable nonpaged pool allocation
+[10/08/2026 21:57:34] [ ! ] method: base=0xffffca0a1c379000 size=0x65000 tag=AlSc first_wx=0xffffca0a1c379000 exec=1 image_evidence
+[10/08/2026 21:57:34] [ ! ] address: 0xffffca0a1c379000 size: 0x65000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: pool!large_execute
+[10/08/2026 21:57:34] [ ! ] type: executable nonpaged pool allocation
+[10/08/2026 21:57:34] [ ! ] method: base=0xffffca0a1c202000 size=0x32000 tag=SONI first_wx=0xffffca0a1c202000 exec=1 image_evidence
+[10/08/2026 21:57:34] [ ! ] address: 0xffffca0a1c202000 size: 0x32000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: pool!large_execute
+[10/08/2026 21:57:34] [ ! ] type: executable nonpaged pool allocation
+[10/08/2026 21:57:34] [ ! ] method: base=0xffffca0a1c266000 size=0x77000 tag=FeBn first_wx=0xffffca0a1c266000 exec=1 image_evidence
+[10/08/2026 21:57:34] [ ! ] address: 0xffffca0a1c266000 size: 0x77000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: logi_core_temp.sys
+[10/08/2026 21:57:34] [ ! ] type: suspicious loaded module list entry
+[10/08/2026 21:57:34] [ ! ] method: module=logi_core_temp.sys base=0xfffff80230cb0000 size=0x8000 mapped=0x0 flags=0x49104000 reaso
+[10/08/2026 21:57:34] [ ! ] address: 0xfffff80230cb0000 size: 0x8000 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{42EA64AC-43F3-4B37-B92F-67C368214BC8}_SharedMemory_S_SpeculativeFileCounts
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{42EA64AC-43F3-4B37-B92F-67C368214BC8}_SharedMemory_S_SpeculativeF
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a46072890 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{6EC9C602-DB9F-482D-AC72-70A906BA19FB}_SharedStream_Section_0
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{6EC9C602-DB9F-482D-AC72-70A906BA19FB}_SharedStream_Section_0 obje
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a46071c90 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{4C43CC34-764D-47B3-B272-9A236B614D70}_SharedStream_Data
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{4C43CC34-764D-47B3-B272-9A236B614D70}_SharedStream_Data object=0x
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a47a14a10 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{7BC1C1AF-9F22-4844-BC32-FE4B75C06198}_SharedMemory_S
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{7BC1C1AF-9F22-4844-BC32-FE4B75C06198}_SharedMemory_S object=0xfff
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a46071ed0 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{6EC9C602-DB9F-482D-AC72-70A906BA19FB}_Channel_Data
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{6EC9C602-DB9F-482D-AC72-70A906BA19FB}_Channel_Data object=0xffff8
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a46071450 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{FCAB01EC-E8B0-43E5-8232-5BDEB0F6F804}_SharedStream_Section_0
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{FCAB01EC-E8B0-43E5-8232-5BDEB0F6F804}_SharedStream_Section_0 obje
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a46077b10 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{FCAB01EC-E8B0-43E5-8232-5BDEB0F6F804}_SharedStream_Data
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{FCAB01EC-E8B0-43E5-8232-5BDEB0F6F804}_SharedStream_Data object=0x
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a460781d0 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{42EA64AC-43F3-4B37-B92F-67C368214BC8}_SharedStream_Section_0
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{42EA64AC-43F3-4B37-B92F-67C368214BC8}_SharedStream_Section_0 obje
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a46070c10 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{6EC9C602-DB9F-482D-AC72-70A906BA19FB}_SharedStream_Data
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{6EC9C602-DB9F-482D-AC72-70A906BA19FB}_SharedStream_Data object=0x
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a46071690 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{FCAB01EC-E8B0-43E5-8232-5BDEB0F6F804}_Channel_Data
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{FCAB01EC-E8B0-43E5-8232-5BDEB0F6F804}_Channel_Data object=0xffff8
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a460775d0 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{4C43CC34-764D-47B3-B272-9A236B614D70}_SharedStream_Section_0
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{4C43CC34-764D-47B3-B272-9A236B614D70}_SharedStream_Section_0 obje
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a47a15850 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_SessionData_0
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_SessionData_0 object=0xffff870a46067850 world_access=0xf001f
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a46067850 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{42EA64AC-43F3-4B37-B92F-67C368214BC8}_SharedStream_Data
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{42EA64AC-43F3-4B37-B92F-67C368214BC8}_SharedStream_Data object=0x
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a46071b10 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ ! ] target: section!Xoreax_{4C43CC34-764D-47B3-B272-9A236B614D70}_Channel_Data
+[10/08/2026 21:57:34] [ ! ] type: world-writable named section
+[10/08/2026 21:57:34] [ ! ] method: namespace=global name=Xoreax_{4C43CC34-764D-47B3-B272-9A236B614D70}_Channel_Data object=0xffff8
+[10/08/2026 21:57:34] [ ! ] address: 0xffff870a47a14650 size: 0x0 status: 0x0
+
+[10/08/2026 21:57:34] [ - ] unloaded service
